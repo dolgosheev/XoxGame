@@ -1,0 +1,48 @@
+﻿*{margin:0;padding:0;}
+
+body{
+  font: 14px/ "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+div#cloud{
+  width:306px;
+  margin:100px auto;
+  border:1px solid ;
+  position:relative;
+}
+
+div#trassa > div{
+  display:block;
+  float:left;
+  width:100px;
+  height:100px;
+  border:1px solid ;
+  text-align:center;
+  font-size: 45px;
+  line-height: 90px;
+  cursor:pointer;
+}
+div#trassa > div:nth-child(3n+1){
+  clear:left;
+}
+
+p{
+  text-align:center;
+}
+
+a  , a:active {
+  color:#0066FF;
+}
+
+a:hover {
+  color:#0000FF;
+}
+
+#pre{
+  margin:10px;
+}
+
+#help{
+  margin-bottom:10px;
+  background-color:#EDEDED;
+}
