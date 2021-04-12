@@ -1,14 +1,16 @@
 {
-  "name": "chatrooms",
-  "version":"0.0.2",
-  "description":"Multiroom chat",
-  "dependencies":{
-    "socket.io":"~1.2.1",
-    "mime": "~1.2.7"
+  "name": "xoxgame",
+  "version": "0.1.0",
+  "description": "Xox game",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jsdom": "^16.5.3",
+    "mime": "^1.2.11",
+    "socket.io": "^1.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node xox_game.js >> output.log &",
+    "start": "node xox_game.js",
     "time": "*"
   },
   "author": "a.dolgosheev",

@@ -5,6 +5,10 @@ var http = require('http'),
     cache = {},
     xox = require('./lib/xox_server');
 
+    const { JSDOM } = require( "jsdom" );
+    const { window } = new JSDOM( "" );
+    const $ = require( "jquery" )( window );
+
 function zero(i){
         i < 10  ?  result ="0"+i  :  result = i  ;
         return result ;
@@ -60,6 +64,8 @@ var server = http.createServer(function(request,response){
 
   if(request.url == '/'){
     filePath = 'public/index.html';
+  } else if(request.url == '/jquery') {
+    filePath = 'node_modules/jquery/dist/jquery.min.js';
   } else {
     filePath = 'public' + request.url;
   }

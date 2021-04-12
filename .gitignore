@@ -1,0 +1,7 @@
+output.log
+node_modules/**
+obj/**
+bin/Microsoft.NodejsTools.WebRole.dll
+xox-game.njsproj.user
+xox-game.njsproj
+package-lock.json
